@@ -12,6 +12,7 @@ const Signup = () => {
 
         // Handle form submission logic here
         console.log("Form submitted:", { firstName, lastName, email, password });
+        // console.log(e.target.value)
     }
     return (
         <>
