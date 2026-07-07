@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
 
 const Signup = () => {
@@ -6,6 +6,13 @@ const Signup = () => {
     const [lastName, setLastName] = useState("")
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        // Handle form submission logic here
+        console.log("Form submitted:", { firstName, lastName, email, password });
+    }
     return (
         <>
             <Navbar />
